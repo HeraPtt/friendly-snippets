@@ -1,0 +1,36 @@
+{
+  "require": {
+    "prefix": "region-js",
+    "body": [
+      "// #region    ${1:title}",
+      "${0:text}",
+      "// #endregion ${1:title}"
+    ],
+    "description": "region"
+  },
+  "const statement": {
+    "prefix": "consti",
+    "body": "const ${1:name} = ${2:value};"
+  },
+  "let statement": {
+    "prefix": "leti",
+    "body": "let ${1:name} = ${2:value}"
+  },
+  "console.log": {
+    "prefix": "cl",
+    "body": "console.log(${0})"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": ["if (${1:condition}) {", "\t$0", "}"],
+    "description": "If Statement"
+  },
+  "else statement": {
+    "prefix": "el",
+    "body": "else {\n\t${0}\n}"
+  },
+  "else if statement": {
+    "prefix": "elif",
+    "body": "else if (${1:condition}) {\n\t${0}\n}"
+  }
+}

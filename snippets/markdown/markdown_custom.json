@@ -1,0 +1,67 @@
+{
+  "header 1": {
+    "prefix": "h1",
+    "body": ["# ${0}"],
+    "description": "Add header level 1"
+  },
+  "header 2": {
+    "prefix": "h2",
+    "body": ["## ${0}"],
+    "description": "Add header level 2"
+  },
+  "header 3": {
+    "prefix": "h3",
+    "body": ["### ${0}"],
+    "description": "Add header level 3"
+  },
+  "header 4": {
+    "prefix": "h4",
+    "body": ["#### ${0}"],
+    "description": "Add header level 4"
+  },
+  "header 5": {
+    "prefix": "h5",
+    "body": ["##### ${0}"],
+    "description": "Add header level 5"
+  },
+  "header 6": {
+    "prefix": "h6",
+    "body": ["###### ${0}"],
+    "description": "Add header level 6"
+  },
+  "Links": {
+    "prefix": "link",
+    "body": ["[${1:text}](${2:url}) ${0}"],
+    "description": "Add links"
+  },
+  "Images": {
+    "prefix": "img",
+    "body": ["![${1:alt text}](${2:path}) ${0}"],
+    "description": "Add images"
+  },
+  "Insert quoted text": {
+    "prefix": "quote",
+    "body": "> ${1}",
+    "description": "Insert quoted text"
+  },
+  "Insert code block": {
+    "prefix": ["cbl", "codeblock"],
+    "body": ["```${1:language}", "${2:text}", "```$0"],
+    "description": "Insert fenced code block"
+  },
+  "Insert unordered list": {
+    "prefix": ["ul", "unordered list"],
+    "body": ["- ${1:first}", "- ${2:second}", "- ${3:third}", "$0"],
+    "description": "Insert unordered list"
+  },
+  "Insert ordered list": {
+    "prefix": ["ol", "ordered list"],
+    "body": ["1. ${1:first}", "2. ${2:second}", "3. ${3:third}", "$0"],
+    "description": "Insert ordered list"
+  },
+  "Insert Callouts": {
+    "prefix": ["clt", "callouts"],
+    "body": ["> [!${1:type}] ${2:title}", "> $0"],
+    "description": "Insert Note"
+  }
+}
