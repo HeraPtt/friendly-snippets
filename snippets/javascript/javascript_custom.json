@@ -44,8 +44,8 @@
   "For Loop": {
     "prefix": "for",
     "body": [
-      "for (let ${1:i} = 0; ${1:i} < ${2:array}.length; ${1:i}++) {",
-      "\tconst ${3:element} = ${2:array}[${1:i}];",
+      "for (let ${1:i} = 0; ${1:i} < ${2:arr}.length; ${1:i}++) {",
+      "\tconst ${3:element} = ${2:arr}[${1:i}];",
       "\t$0",
       "}"
     ],
@@ -53,7 +53,7 @@
   },
   "For-Each Loop": {
     "prefix": "foreach",
-    "body": ["${1:array}.forEach(${2:element} => {", "\t$0", "});"],
+    "body": ["${1:arr}.forEach(${2:element} => {", "\t$0", "});"],
     "description": "For-Each Loop"
   },
   "For-In Loop": {
@@ -69,7 +69,7 @@
     "description": "For-In Loop"
   },
   "return": {
-    "prefix": "ret",
-    "body": "return ${0}"
+    "prefix": "return",
+    "body": "return ${0};"
   }
 }
