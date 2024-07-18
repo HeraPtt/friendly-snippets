@@ -33,8 +33,12 @@
     "prefix": "elif",
     "body": "else if (${1:condition}) {\n\t${0}\n}"
   },
+  "named function": {
+    "prefix": "fn",
+    "body": "function ${1:name} (${2:arguments}) {\n\t${0}\n}"
+  },
   "arrow function": {
     "prefix": "af",
-    "body": "(${1:arguments}) => ${2:statement}"
+    "body": ["(${1:arguments}) => {", "  ${2:statement}", "};"]
   }
 }
