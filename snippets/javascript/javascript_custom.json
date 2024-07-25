@@ -39,7 +39,7 @@
   },
   "arrow function": {
     "prefix": "af",
-    "body": "(${1:arguments}) => ${2:statement}"
+    "body": "${1:arguments} => ${2:statement}"
   },
   "For Loop": {
     "prefix": "for",
@@ -51,17 +51,12 @@
     ],
     "description": "For Loop"
   },
-  "For-Each Loop": {
-    "prefix": "foreach",
-    "body": ["${1:arr}.forEach(${2:element} => {", "\t$0", "});"],
-    "description": "For-Each Loop"
-  },
   "For-In Loop": {
     "prefix": "forin",
     "body": [
-      "for (const ${1:key} in ${2:object}) {",
-      "\tif (${2:object}.hasOwnProperty(${1:key})) {",
-      "\t\tconst ${3:element} = ${2:object}[${1:key}];",
+      "for (const ${1:k} in ${2:obj}) {",
+      "\tif (${2:obj}.hasOwnProperty(${1:k})) {",
+      "\t\tconst ${3:e} = ${2:obj}[${1:k}];",
       "\t\t$0",
       "\t}",
       "}"
@@ -71,5 +66,19 @@
   "return": {
     "prefix": "return",
     "body": "return ${0};"
+  },
+  "New Statement": {
+    "prefix": "new",
+    "body": ["const ${1:name} = new ${2:type}(${3:arguments});$0"],
+    "description": "New Statement"
+  },
+  "Try-Catch Statement": {
+    "prefix": "trycatch",
+    "body": ["try {", "\t$0", "} catch (${1:error}) {", "\t", "}"],
+    "description": "Try-Catch Statement"
+  },
+  "try/catch/finally": {
+    "prefix": "trycatchfinally",
+    "body": "try {\n\t${0}\n} catch (${1:err}) {\n\t\n} finally {\n\t\n}"
   }
 }
