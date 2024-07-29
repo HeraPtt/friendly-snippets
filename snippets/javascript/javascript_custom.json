@@ -74,11 +74,11 @@
   },
   "Try-Catch Statement": {
     "prefix": "trycatch",
-    "body": ["try {", "\t$0", "} catch (${1:error}) {", "\t", "}"],
+    "body": ["try {", "\t${1}", "} catch (${2:error}) {", "\t${0}", "}"],
     "description": "Try-Catch Statement"
   },
   "try/catch/finally": {
     "prefix": "trycatchfinally",
-    "body": "try {\n\t${0}\n} catch (${1:err}) {\n\t\n} finally {\n\t\n}"
+    "body": "try {\n\t${1}\n} catch (${2:err}) {\n\t${3}\n} finally {\n\t${0}\n}"
   }
 }

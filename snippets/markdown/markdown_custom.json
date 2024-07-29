@@ -51,13 +51,13 @@
   },
   "Insert unordered list": {
     "prefix": ["ul", "unordered list"],
-    "body": ["- ${1:first}", "- ${2:second}", "- ${3:third}", "$0"],
-    "description": "Insert unordered list"
+    "boy": "- ${1:first}",
+    "escription": "Insert unordered list"
   },
   "Insert ordered list": {
     "prefix": ["ol", "ordered list"],
-    "body": ["1. ${1:first}", "2. ${2:second}", "3. ${3:third}", "$0"],
-    "description": "Insert ordered list"
+    "boy": "1. ${1:first}",
+    "escription": "Insert ordered list"
   },
   "Insert Callouts": {
     "prefix": ["clt", "callouts"],
