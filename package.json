@@ -16,6 +16,10 @@
       {
         "language": "javascript",
         "path": "./snippets/javascript/javascript_custom.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html/html_custom.json"
       }
     ]
   }
