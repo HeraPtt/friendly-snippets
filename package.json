@@ -20,6 +20,10 @@
       {
         "language": "html",
         "path": "./snippets/html/html_custom.json"
+      },
+      {
+        "language": "lua",
+        "path": "./snippets/lua/lua_custom.json"
       }
     ]
   }

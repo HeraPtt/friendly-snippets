@@ -1,0 +1,11 @@
+{
+  "region": {
+    "prefix": "region-lua",
+    "body": [
+      "-- #region    ${1:title}",
+      "${0:text}",
+      "-- #endregion ${1:title}"
+    ],
+    "description": "region"
+  }
+}

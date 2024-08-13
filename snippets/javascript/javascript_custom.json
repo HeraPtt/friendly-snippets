@@ -1,5 +1,5 @@
 {
-  "require": {
+  "region": {
     "prefix": "region-js",
     "body": [
       "// #region    ${1:title}",
@@ -85,5 +85,10 @@
     "prefix": "while",
     "body": ["while (${1:condition}) {", "\t$0", "}"],
     "description": "While Statement"
+  },
+  "Import external module.": {
+    "prefix": "import statement",
+    "body": ["import { $0 } from \"${1:module}\";"],
+    "description": "Import external module."
   }
 }

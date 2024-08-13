@@ -1,6 +1,6 @@
 {
   "region": {
     "prefix": "region-css",
-    "body": "/* #region ${1}*/\r\n${2}\r\n/* #endregion ${1}*/${0}"
+    "body": "/* #region    ${1}*/\r\n${2}\r\n/* #endregion ${1}*/${0}"
   }
 }
