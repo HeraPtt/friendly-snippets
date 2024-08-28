@@ -44,6 +44,15 @@
   "For Loop": {
     "prefix": "for",
     "body": [
+      "for (let ${1:i} = 0; ${1:i} <${3:=} ${2:num}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+  "For Loop arr": {
+    "prefix": "forarr",
+    "body": [
       "for (let ${1:i} = 0; ${1:i} < ${2:arr}.length; ${1:i}++) {",
       "\tconst ${3:e} = ${2:arr}[${1:i}];",
       "\t$0",
@@ -90,5 +99,24 @@
     "prefix": "import statement",
     "body": ["import { $0 } from \"${1:module}\";"],
     "description": "Import external module."
+  },
+  "Switch Statement": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:key}) {",
+      "\tcase ${2:value}:",
+      "\t\t$3",
+      "\t\tbreak;",
+      "${0:case}",
+      "\tdefault:",
+      "\t\tbreak;",
+      "}"
+    ],
+    "description": "Switch Statement"
+  },
+  "Case": {
+    "prefix": "case",
+    "body": ["case ${1:value}:", "\t\t$0", "\t\tbreak;"],
+    "description": "Switch Statement"
   }
 }
