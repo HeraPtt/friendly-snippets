@@ -1,0 +1,17 @@
+{
+  "main": {
+    "prefix": "psvm",
+    "body": ["public static void main(String[] args) {", "\t$0", "}"],
+    "description": "Public static main method"
+  },
+  "class": {
+    "prefix": "class",
+    "body": ["public class ${TM_FILENAME_BASE} {", "\t$0", "}"],
+    "description": "Public class"
+  },
+  "sysout": {
+    "prefix": "sout",
+    "body": ["System.out.println($0);"],
+    "description": "Print to standard out"
+  }
+}

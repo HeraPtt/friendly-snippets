@@ -24,6 +24,10 @@
       {
         "language": "lua",
         "path": "./snippets/lua/lua_custom.json"
+      },
+      {
+        "language": "java",
+        "path": "./snippets/java/java_custom.json"
       }
     ]
   }
