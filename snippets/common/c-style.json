@@ -1,0 +1,51 @@
+{
+  "declare int": {
+    "prefix": "i",
+    "body": ["int $1${0:;}"],
+    "description": "declare int type variable"
+  },
+  "declare double": {
+    "prefix": "d",
+    "body": ["double $1${0:;}"],
+    "description": "declare double type variable"
+  },
+  "declare boolean": {
+    "prefix": "b",
+    "body": ["boolean $1${0:;}"],
+    "description": "declare boolean type variable"
+  },
+  "declare string": {
+    "prefix": "s",
+    "body": ["String $1${0:;}"],
+    "description": "declare String type variable"
+  },
+  "declare object": {
+    "prefix": "o",
+    "body": ["$1 $2${0:;}"],
+    "description": "declare String type variable"
+  },
+  "newObject": {
+    "prefix": "new",
+    "body": ["${1:Object} ${2:foo} = new ${1:Object}(${3:arguments});"],
+    "description": "Create new Object"
+  },
+  "For Loop": {
+    "prefix": "fori",
+    "body": [
+      "for (int ${1:i} = ${2:0}; ${1:i} <${4:=} ${3:num}; ${1:i}++) {",
+      "\t$5",
+      "}$0"
+    ],
+    "description": "For Loop"
+  },
+  "For Loop arr": {
+    "prefix": "forarr",
+    "body": [
+      "for (int ${1:i} = 0; ${1:i} < ${2:arr}.length; ${1:i}++) {",
+      "\t$4 ${3:e} = ${2:arr}[${1:i}];",
+      "\t$0",
+      "}"
+    ],
+    "description": "For Loop: array"
+  }
+}

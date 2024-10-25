@@ -1,0 +1,45 @@
+{
+  "If Statement": {
+    "prefix": "if",
+    "body": ["if (${1:condition}) {", "\t$0", "}"],
+    "description": "If Statement"
+  },
+  "else statement": {
+    "prefix": "el",
+    "body": "else {\n\t${0}\n}"
+  },
+  "else if statement": {
+    "prefix": "elif",
+    "body": "else if (${1:condition}) {\n\t${0}\n}"
+  },
+  "Switch Statement": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:key}) {",
+      "\tcase ${2:value}:",
+      "\t{",
+      "\t\t$3",
+      "\t}",
+      "\t\tbreak;$0",
+      "\tdefault:",
+      "\t\tbreak;",
+      "}"
+    ],
+    "description": "Switch Statement"
+  },
+  "Case": {
+    "prefix": "case",
+    "body": ["case ${1:value}:", "\t{", "\t\t$0", "\t}", "\tbreak;"],
+    "description": "Switch Statement"
+  },
+  "While Statement": {
+    "prefix": "while",
+    "body": ["boolean flag = ${1:true};", "while (flag) {", "\t$0", "}"],
+    "description": "While Statement"
+  },
+  "Do-While Statement": {
+    "prefix": "dowhile",
+    "body": ["do {", "\t$0", "} while (${1:condition});"],
+    "description": "Do-While Statement"
+  }
+}

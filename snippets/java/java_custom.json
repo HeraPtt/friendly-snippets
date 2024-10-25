@@ -4,14 +4,64 @@
     "body": ["public static void main(String[] args) {", "\t$0", "}"],
     "description": "Public static main method"
   },
+  "package": {
+    "prefix": "package",
+    "body": ["package $1;", "", "$0"],
+    "description": "Public class"
+  },
   "class": {
     "prefix": "class",
     "body": ["public class ${TM_FILENAME_BASE} {", "\t$0", "}"],
     "description": "Public class"
   },
   "sysout": {
+    "prefix": "soutn",
+    "body": ["System.out.print($0);"],
+    "description": "Print to standard out"
+  },
+  "sysoutline": {
     "prefix": "sout",
     "body": ["System.out.println($0);"],
     "description": "Print to standard out"
+  },
+  "return": {
+    "prefix": "return",
+    "body": ["return $0;"],
+    "description": "return"
+  },
+  "method": {
+    "prefix": "method",
+    "body": ["${1:void} ${2:name}($3) {", "\t$0", "}"],
+    "description": "method"
+  },
+  "static_method": {
+    "prefix": "static_method",
+    "body": ["static ${1:void} ${2:name}($3) {", "\t$0", "}"],
+    "description": "static method"
+  },
+  "private_method": {
+    "prefix": "private_method",
+    "body": ["private ${1:void} ${2:name}($3) {", "\t$0", "}"],
+    "description": "private method"
+  },
+  "Public method": {
+    "prefix": "public_method",
+    "body": ["public ${1:void} ${2:name}(${3}) {", "\t$0", "}"],
+    "description": "public method"
+  },
+  "Private static method": {
+    "prefix": "private_static_method",
+    "body": ["private static ${1:Type} ${2:name}(${3}) {", "\t$0", "}"],
+    "description": "private static method"
+  },
+  "Public static method": {
+    "prefix": "public_static_method",
+    "body": ["public static ${1:void} ${2:name}(${3}) {", "\t$0", "}"],
+    "description": "public static method"
+  },
+  "Protected Method": {
+    "prefix": "protected_method",
+    "body": ["protected ${1:void} ${2:name}(${3}) {", "\t$0", "}"],
+    "description": "Protected method"
   }
 }

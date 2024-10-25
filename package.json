@@ -18,6 +18,10 @@
         "path": "./snippets/javascript/javascript_custom.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/common/common.json"
+      },
+      {
         "language": "html",
         "path": "./snippets/html/html_custom.json"
       },
@@ -28,6 +32,14 @@
       {
         "language": "java",
         "path": "./snippets/java/java_custom.json"
+      },
+      {
+        "language": "java",
+        "path": "./snippets/common/common.json"
+      },
+      {
+        "language": "java",
+        "path": "./snippets/common/c-style.json"
       }
     ]
   }
