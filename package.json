@@ -40,6 +40,14 @@
       {
         "language": "java",
         "path": "./snippets/common/c-style.json"
+      },
+      {
+        "language": "c",
+        "path": "./snippets/common/c-style.json"
+      },
+      {
+        "language": "c",
+        "path": "./snippets/c/c-custom.json"
       }
     ]
   }

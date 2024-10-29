@@ -1,0 +1,19 @@
+{
+  "main() template": {
+    "prefix": "main",
+    "body": [
+      "#include <stdlib.h>",
+      "",
+      "int main(int argc, char *argv[])",
+      "{$0",
+      "\treturn EXIT_SUCCESS;",
+      "}"
+    ],
+    "description": "Standard main() snippet"
+  },
+  "main(void) template": {
+    "prefix": "mainn",
+    "body": ["int main(void)", "{$0", "\treturn EXIT_SUCCESS;", "}"],
+    "description": "No-args main() snippet"
+  }
+}

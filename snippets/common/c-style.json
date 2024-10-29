@@ -9,8 +9,13 @@
     "body": ["double $1${0:;}"],
     "description": "declare double type variable"
   },
-  "declare boolean": {
+  "declare bool": {
     "prefix": "b",
+    "body": ["bool $1${0:;}"],
+    "description": "declare boolean type variable"
+  },
+  "declare boolean": {
+    "prefix": "bl",
     "body": ["boolean $1${0:;}"],
     "description": "declare boolean type variable"
   },
