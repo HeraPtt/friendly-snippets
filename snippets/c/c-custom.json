@@ -4,16 +4,33 @@
     "body": [
       "#include <stdlib.h>",
       "",
-      "int main(int argc, char *argv[])",
-      "{$0",
+      "int main(int argc, char *argv[]) {",
+      "\t$0",
       "\treturn EXIT_SUCCESS;",
       "}"
     ],
     "description": "Standard main() snippet"
   },
-  "main(void) template": {
-    "prefix": "mainn",
-    "body": ["int main(void)", "{$0", "\treturn EXIT_SUCCESS;", "}"],
-    "description": "No-args main() snippet"
+  "Multiline comment": {
+    "prefix": "//",
+    "body": ["/* $0", " */"],
+    "description": "Convenient multiline comment"
+  },
+  "struct type": {
+    "prefix": "struct",
+    "body": ["typedef struct $1 ${1:Box};", "struct $1 {", "\t$0", "};"],
+    "description": "Define a type with struct"
+  },
+  "malloc": {
+    "prefix": "malloc",
+    "body": [
+      "${1:int} *${2:p}=(${1} *)malloc(sizeof(${1:int})${3});",
+      "if (${2} == NULL) {",
+      "\t${4}",
+      "}",
+      "${5}",
+      "free(${2});"
+    ],
+    "description": "malloc() snippet"
   }
 }

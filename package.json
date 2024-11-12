@@ -18,8 +18,13 @@
         "path": "./snippets/javascript/javascript_custom.json"
       },
       {
-        "language": "javascript",
-        "path": "./snippets/common/common.json"
+        "language": [
+          "javascript",
+          "java",
+          "c",
+          "cpp"
+        ],
+        "path": "./snippets-custom/common/common.json"
       },
       {
         "language": "html",
@@ -34,20 +39,20 @@
         "path": "./snippets/java/java_custom.json"
       },
       {
-        "language": "java",
-        "path": "./snippets/common/common.json"
-      },
-      {
-        "language": "java",
-        "path": "./snippets/common/c-style.json"
-      },
-      {
-        "language": "c",
-        "path": "./snippets/common/c-style.json"
+        "language": [
+          "java",
+          "c",
+          "cpp"
+        ],
+        "path": "./snippets-custom/common/c-style.json"
       },
       {
         "language": "c",
         "path": "./snippets/c/c-custom.json"
+      },
+      {
+        "language": "cpp",
+        "path": "./snippets-custom/cpp/cpp.json"
       }
     ]
   }
