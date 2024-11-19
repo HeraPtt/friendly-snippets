@@ -7,15 +7,15 @@
     "snippets": [
       {
         "language": "css",
-        "path": "./snippets/css/css_custom.json"
+        "path": "./snippets-custom/css/css.json"
       },
       {
         "language": "markdown",
-        "path": "./snippets/markdown/markdown_custom.json"
+        "path": "./snippets-custom/markdown/markdown.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/javascript/javascript_custom.json"
+        "path": "./snippets-custom/javascript/javascript.json"
       },
       {
         "language": [
@@ -28,15 +28,15 @@
       },
       {
         "language": "html",
-        "path": "./snippets/html/html_custom.json"
+        "path": "./snippets-custom/html/html.json"
       },
       {
         "language": "lua",
-        "path": "./snippets/lua/lua_custom.json"
+        "path": "./snippets-custom/lua/lua.json"
       },
       {
         "language": "java",
-        "path": "./snippets/java/java_custom.json"
+        "path": "./snippets-custom/java/java.json"
       },
       {
         "language": [
@@ -48,7 +48,7 @@
       },
       {
         "language": "c",
-        "path": "./snippets/c/c-custom.json"
+        "path": "./snippets-custom/c/c.json"
       },
       {
         "language": "cpp",

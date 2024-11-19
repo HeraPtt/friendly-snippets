@@ -1,0 +1,14 @@
+{
+  "region": {
+    "prefix": "region_html",
+    "body": ["<!-- #region    ${1} -->", "$0", "<!-- #endregion ${1} -->"],
+    "description": "HTML - region",
+    "scope": "text.html"
+  },
+  "address": {
+    "prefix": "address",
+    "body": ["<address>", "$1", "</address>"],
+    "description": "HTML - Defines an address element",
+    "scope": "text.html"
+  }
+}

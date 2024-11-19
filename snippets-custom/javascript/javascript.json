@@ -1,0 +1,85 @@
+{
+  "region": {
+    "prefix": "region-js",
+    "body": [
+      "// #region    ${1:title}",
+      "${0:text}",
+      "// #endregion ${1:title}"
+    ],
+    "description": "region"
+  },
+  "const statement": {
+    "prefix": "consti",
+    "body": "const ${1:name} = ${2:value};"
+  },
+  "let statement": {
+    "prefix": "leti",
+    "body": "let ${1:name}"
+  },
+  "console.log": {
+    "prefix": "cl",
+    "body": "console.log(${0})"
+  },
+  "named function": {
+    "prefix": "fun",
+    "body": "function ${1:name} (${2:arguments}) {\n\t${0}\n}"
+  },
+  "arrow function": {
+    "prefix": "funa",
+    "body": "${1:arguments} => ${2:statement}"
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (let ${1:i} = 0; ${1:i} <${3:=} ${2:num}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+  "For Loop arr": {
+    "prefix": "forarr",
+    "body": [
+      "for (let ${1:i} = 0; ${1:i} < ${2:arr}.length; ${1:i}++) {",
+      "\tconst ${3:e} = ${2:arr}[${1:i}];",
+      "\t$0",
+      "}"
+    ],
+    "description": "For Loop"
+  },
+  "For-In Loop": {
+    "prefix": "forin",
+    "body": [
+      "for (const ${1:k} in ${2:obj}) {",
+      "\tif (${2:obj}.hasOwnProperty(${1:k})) {",
+      "\t\tconst ${3:e} = ${2:obj}[${1:k}];",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "For-In Loop"
+  },
+  "return": {
+    "prefix": "return",
+    "body": "return ${0};"
+  },
+  "New Statement": {
+    "prefix": "new",
+    "body": ["const ${1:name} = new ${2:type}(${3:arguments});$0"],
+    "description": "New Statement"
+  },
+  "Try-Catch Statement": {
+    "prefix": "trycatch",
+    "body": ["try {", "\t${1}", "} catch (${2:error}) {", "\t${0}", "}"],
+    "description": "Try-Catch Statement"
+  },
+  "try/catch/finally": {
+    "prefix": "trycatchfinally",
+    "body": "try {\n\t${1}\n} catch (${2:err}) {\n\t${3}\n} finally {\n\t${0}\n}"
+  },
+  "Import external module.": {
+    "prefix": "import statement",
+    "body": ["import { $0 } from \"${1:module}\";"],
+    "description": "Import external module."
+  }
+}
